@@ -43,7 +43,7 @@
 
 1.Clone the Project Repository
 Begin by downloading the project files from GitHub:
-
+```bash
 
   cd MediaAmp
 
@@ -71,11 +71,15 @@ At the root of your project, create a .env file and add the following credential
 4.Run the App Locally
 To start the local development server, use:
 
-npm run dev or
+npm run dev
+
+or
 
 yarn dev
 
-5., open your browser and visit:
+5. open your browser and visit:
+
+
 http://localhost:5173
 to view the app in action.
 
