@@ -66,9 +66,9 @@ export const Home = () => {
             <div className="content-header">
               <div>
                 <h1 className="content-title"> GameVerse </h1>
-                <p className="content-subtitle">
+                <h3 className="content-subtitle">
                   Spawn into Fun.Respawn with friends.
-                </p>
+                </h3>
               </div>
             </div>
 

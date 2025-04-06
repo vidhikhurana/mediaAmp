@@ -12,19 +12,21 @@ import {
 import "./Sidebar.css";
 
 const genres = [
-  { id: 4, name: "Action", image: "/genres/action.jpg" },
-  { id: 51, name: "Indie", image: "/genres/indie.jpg" },
+
+  { id: 51, name: "Racing", image: "/genres/race.jpg" },
   { id: 3, name: "Adventure", image: "/genres/adventure.jpg" },
-  { id: 5, name: "RPG", image: "/genres/rpg.jpg" },
-  { id: 10, name: "Strategy", image: "/genres/strategy.jpg" },
-  { id: 2, name: "Shooter", image: "/genres/shooter.jpg" },
-  { id: 40, name: "Casual", image: "/genres/casual.jpg" },
-  { id: 14, name: "Simulation", image: "/genres/simulation.jpg" },
+  { id: 4, name: "Action", image: "/genres/action.jpg" },
+  { id: 5, name: "Card", image: "/genres/card.webp" },
+  { id: 10, name: "Horror", image: "/genres/horror.webp" },
+  { id: 2, name: "Shooting", image: "/genres/shooting.webp" },
+ 
+  
+  { id: 14, name: "Sports", image: "/genres/sport.webp" },
   { id: 7, name: "Puzzle", image: "/genres/puzzel.jpg" },
-  { id: 11, name: "Arcade", image: "/genres/arcade.jpg" },
-  { id: 83, name: "Platformer", image: "/genres/platformer.jpg" },
-  { id: 59, name: "Massively Multiplayer", image: "/genres/massively.jpg" },
-  { id: 1, name: "Racing", image: "/genres/racing.jpg" },
+ 
+
+  { id: 59, name: "Fight", image: "/genres/fight.webp" },
+  
 ];
 
 const platformsList = [
@@ -42,7 +44,7 @@ export const Sidebar = () => {
   const selectedGenres = filters.genres || [];
   const selectedPlatforms = filters.platforms || [];
 
-  const [expandedSection, setExpandedSection] = useState("genres");
+  const [expandedSection, setExpandedSection] = useState("");
 
   const toggleSection = (section) => {
     setExpandedSection(expandedSection === section ? "" : section);
@@ -89,8 +91,8 @@ export const Sidebar = () => {
     <div className="sidebar">
       {/* Filters Header */}
       <div className="sidebar-top">
-        <div className="sidebar-filter-header">
-          <Filter size={18} />
+        <div className="sidebar-title-wrapper">
+          <Filter className="filter-icon" />
           <h2 className="sidebar-title">Filters</h2>
         </div>
       </div>
@@ -196,15 +198,15 @@ export const Sidebar = () => {
                 { value: "rating", label: "Rating (Low to High)" },
                 { value: "-released", label: "Release Date (Newest)" },
                 { value: "-added", label: "Recently Added" },
+                { value: "-metacritic", label: "Most Popular This Year" }, // ✅ NEW
+                { value: "-downloads", label: "Most Downloaded" },         // ✅ NEW (ensure API/backend supports this)
               ].map((option) => (
                 <label key={option.value} className="radio-label">
                   <input
                     type="radio"
                     name="sort"
                     value={option.value}
-                    checked={
-                      (filters.ordering || "-rating") === option.value
-                    }
+                    checked={(filters.ordering || "-rating") === option.value}
                     onChange={() => handleSortChange(option.value)}
                     className="radio-input"
                   />
