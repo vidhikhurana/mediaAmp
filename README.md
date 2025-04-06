@@ -51,6 +51,7 @@ cd MediaAmp
 Use your preferred package manager to install all required packages:
 
 npm install or
+
 yarn install
 
 
@@ -60,12 +61,14 @@ At the root of your project, create a .env file and add the following credential
 
 
 VITE_API_RAWG=your_rawg_api_key_here
+
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key_here
 
 4.Run the App Locally
 To start the local development server, use:
 
 npm run dev or
+
 yarn dev
 
 5., open your browser and visit:
