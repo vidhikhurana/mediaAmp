@@ -1,12 +1,74 @@
-# React + Vite
+# 🎮 GameVerse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**GameVerse** is a dynamic web application designed for gaming enthusiasts. It utilizes the RAWG API to deliver detailed information on a wide array of games. It has secure login system, and the ability to curate personal game collections, GameVerse offers a feature-rich gaming companion.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Core Features
 
-## Expanding the ESLint configuration
+- 🧊**Immersive 3D Entry Screen** – Built with Three.js for a visually engaging first impression
+- 🔎 **Game Explorer** – Search and explore thousands of titles via the RAWG API
+- 🔐 **Secure Access** – User authentication and session handling using Clerk
+- 💾 **Custom Game Lists** – Logged-in users can bookmark their favorite games
+- 📱**Mobile-Friendly UI** – Fully responsive for smartphones and tablets
+- 👨‍💻**Developer Showcase** – Interactive dev profile enhanced with Rive-powered animations
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰Tech Stack
+### ⚛️ Frontend
+- React.js
+- Redux Toolkit (for global state)
+- React Router (client-side routing)
+- Three.js (3D scenes)
+- Rive (animations)
+- CSS (styling and layout)
+
+### 🔐Authentication
+- [Clerk](https://clerk.dev/)
+
+### External API
+- [RAWG API](https://rawg.io/apidocs)
+
+---
+
+## 🧑‍🏫 Getting Started
+
+### Requirements
+
+- Node.js + npm (or yarn)
+- RAWG API Key
+- Clerk project credentials
+
+### Setup Instructions
+
+1.Clone the Project Repository
+Begin by downloading the project files from GitHub:
+
+git clone https://github.com/Rohan-Raidani/Mediaamp-Assignment.git
+cd Mediaamp-Assignment
+
+2. Install Project Dependencies
+Use your preferred package manager to install all required packages:
+
+npm install or
+yarn install
+
+
+
+3.Configure Environment Variables
+At the root of your project, create a .env file and add the following credentials:
+
+
+VITE_API_RAWG=your_rawg_api_key_here
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key_here
+
+4.Run the App Locally
+To start the local development server, use:
+
+npm run dev or
+yarn dev
+
+5., open your browser and visit:
+http://localhost:5173
+to view the app in action.
+
