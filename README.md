@@ -44,8 +44,8 @@
 1.Clone the Project Repository
 Begin by downloading the project files from GitHub:
 
-git clone https://github.com/Rohan-Raidani/Mediaamp-Assignment.git
-cd Mediaamp-Assignment
+
+cd MediaAmp
 
 2. Install Project Dependencies
 Use your preferred package manager to install all required packages:
