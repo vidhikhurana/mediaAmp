@@ -19,12 +19,8 @@ const genres = [
   { id: 5, name: "Card", image: "/genres/card.webp" },
   { id: 10, name: "Horror", image: "/genres/horror.webp" },
   { id: 2, name: "Shooting", image: "/genres/shooting.webp" },
- 
-  
   { id: 14, name: "Sports", image: "/genres/sport.webp" },
   { id: 7, name: "Puzzle", image: "/genres/puzzel.jpg" },
- 
-
   { id: 59, name: "Fight", image: "/genres/fight.webp" },
   
 ];
