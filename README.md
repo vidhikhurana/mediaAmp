@@ -45,14 +45,17 @@
 Begin by downloading the project files from GitHub:
 
 
-cd MediaAmp
+  cd MediaAmp
+
 
 2. Install Project Dependencies
 Use your preferred package manager to install all required packages:
 
-npm install or
+  npm install
 
-yarn install
+or
+
+  yarn install
 
 
 
@@ -60,9 +63,10 @@ yarn install
 At the root of your project, create a .env file and add the following credentials:
 
 
-VITE_API_RAWG=your_rawg_api_key_here
+  1.VITE_API_RAWG=your_rawg_api_key_here
 
-VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key_here
+
+2.VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key_here
 
 4.Run the App Locally
 To start the local development server, use:
