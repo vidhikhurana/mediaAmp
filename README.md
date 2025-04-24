@@ -11,6 +11,9 @@ Personalized Collections - Save favorite games to your profile (requires authent
 Responsive Design - Optimized for both desktop and mobile devices
 Developer Profile - Interactive developer information page with Rive animations for social media links
 
+## 🖼️ UI Preview
+
+![App Screenshot](./assets/screenshot.jpg)
 
 
 
