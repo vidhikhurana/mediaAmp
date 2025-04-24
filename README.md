@@ -104,6 +104,6 @@ Vidhi Khurana
 🙏 Acknowledgements
 
 
-1.[RAWG API](https://rawg.io/apidocs) for providing comprehensive game data
+- [RAWG API](https://rawg.io/apidocs) for providing comprehensive game data
 - [Clerk](https://clerk.dev) for authentication services
 - [Three.js](https://threejs.org) for 3D rendering capabilities
